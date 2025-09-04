@@ -1,0 +1,257 @@
+.verification-status-card {
+  margin-top: 2rem;
+  background-color: white;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.card-header h2 {
+  margin: 0;
+}
+
+.status-badge {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.status-pending {
+  background-color: #fff3e0;
+  color: #f39c12;
+}
+
+.status-submitted {
+  background-color: #e3f2fd;
+  color: #1976d2;
+}
+
+.status-verified {
+  background-color: #e8f5e9;
+  color: #27ae60;
+}
+
+.status-rejected {
+  background-color: #ffebee;
+  color: #e74c3c;
+}
+
+.verification-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.verification-info p {
+  margin: 0.5rem 0;
+  color: #555;
+}
+
+.required-text {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+.submitted-date {
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.verified-text {
+  color: #27ae60;
+  font-weight: bold;
+}
+
+.rejected-text {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+.rejection-reason {
+  color: #e74c3c;
+  font-style: italic;
+}
+
+.documents-list h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.document-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.document-item:last-child {
+  border-bottom: none;
+}
+
+.document-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.document-name {
+  font-weight: 500;
+}
+
+.document-status {
+  padding: 0.25rem 0.5rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.document-status.pending {
+  background-color: #fff3e0;
+  color: #f39c12;
+}
+
+.document-status.approved {
+  background-color: #e8f5e9;
+  color: #27ae60;
+}
+
+.document-status.rejected {
+  background-color: #ffebee;
+  color: #e74c3c;
+}
+
+.upload-btn {
+  padding: 0.5rem 1rem;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.upload-btn:hover {
+  background-color: #2980b9;
+}
+
+.upload-form {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.upload-form h3 {
+  margin-top: 0;
+}
+
+.file-upload-area {
+  margin: 1rem 0;
+  padding: 2rem;
+  border: 2px dashed #ddd;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.file-upload-area input {
+  margin: 1rem 0;
+}
+
+.upload-progress {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.progress-bar {
+  height: 10px;
+  background-color: #3498db;
+  border-radius: 5px;
+  transition: width 0.3s;
+}
+
+.submit-section {
+  background-color: #e8f4fc;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.submit-section p {
+  margin: 0 0 1rem 0;
+  color: #555;
+}
+
+.submit-btn {
+  padding: 0.75rem 1.5rem;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #219653;
+}
+
+.submit-btn:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+
+.cancel-btn {
+  padding: 0.5rem 1rem;
+  background-color: #ecf0f1;
+  color: #333;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.cancel-btn:hover {
+  background-color: #d5dbdb;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .verification-status-card {
+    padding: 1rem;
+  }
+  
+  .card-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .document-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+  .document-info {
+    width: 100%;
+    justify-content: space-between;
+  }
+}

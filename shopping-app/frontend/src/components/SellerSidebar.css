@@ -1,0 +1,52 @@
+.seller-sidebar {
+  width: 250px;
+  background-color: #333;
+  color: white;
+  height: 100vh;
+  position: fixed;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.seller-sidebar h2 {
+  color: white;
+  text-align: center;
+  margin-top: 0;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #555;
+}
+
+.seller-sidebar nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.seller-sidebar nav ul li {
+  margin-bottom: 0.5rem;
+}
+
+.seller-sidebar nav ul li a {
+  color: #ddd;
+  text-decoration: none;
+  display: block;
+  padding: 0.75rem;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.seller-sidebar nav ul li a:hover {
+  background-color: #555;
+}
+
+.seller-sidebar nav ul li a.active {
+  background-color: #3498db;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .seller-sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+}

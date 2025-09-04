@@ -1,0 +1,30 @@
+.design-system-demo {
+  padding: 2rem 0;
+}
+
+.design-system-demo h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.design-system-demo h2 {
+  margin: 1.5rem 0 1rem 0;
+}
+
+.design-system-demo .card {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .design-system-demo {
+    padding: 1rem 0;
+  }
+  
+  .design-system-demo .grid-cols-3 {
+    grid-template-columns: 1fr;
+  }
+  
+  .design-system-demo .grid-cols-2 {
+    grid-template-columns: 1fr;
+  }
+}

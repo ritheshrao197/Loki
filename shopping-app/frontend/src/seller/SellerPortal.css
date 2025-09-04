@@ -1,0 +1,44 @@
+.seller-layout {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.seller-main {
+  flex: 1;
+  margin-left: 250px;
+  padding: 2rem;
+}
+
+.portal-header h1 {
+  margin-top: 0;
+  color: #333;
+}
+
+.portal-header p {
+  color: #777;
+  margin-top: 0;
+}
+
+.portal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.portal-section h2 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .seller-main {
+    margin-left: 0;
+    padding: 1rem;
+  }
+  
+  .portal-header h1 {
+    font-size: 1.5rem;
+  }
+}

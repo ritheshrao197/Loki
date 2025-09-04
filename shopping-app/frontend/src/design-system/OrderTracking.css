@@ -1,0 +1,107 @@
+/* Order Tracking Styles */
+.order-tracking {
+  position: relative;
+  padding: 24px 0;
+}
+
+.tracking-line {
+  position: absolute;
+  left: 20px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: #E0E0E0;
+  z-index: 1;
+}
+
+.tracking-step {
+  display: flex;
+  margin-bottom: 24px;
+  position: relative;
+  z-index: 2;
+}
+
+.tracking-step:last-child {
+  margin-bottom: 0;
+}
+
+.step-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #E0E0E0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 16px;
+  color: #9E9E9E;
+  font-weight: 600;
+  flex-shrink: 0;
+  z-index: 2;
+}
+
+.tracking-step.completed .step-icon {
+  background-color: #388E3C;
+  color: #FFFFFF;
+}
+
+.tracking-step.active .step-icon {
+  background-color: #283593;
+  color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  box-shadow: 0 0 0 2px #283593;
+}
+
+.completed-icon {
+  font-size: 20px;
+}
+
+.step-number {
+  font-size: 18px;
+}
+
+.step-content {
+  flex: 1;
+}
+
+.step-title {
+  margin: 0 0 4px 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #212121;
+}
+
+.tracking-step.completed .step-title {
+  color: #388E3C;
+}
+
+.tracking-step.active .step-title {
+  color: #283593;
+}
+
+.step-description {
+  margin: 0 0 4px 0;
+  font-size: 14px;
+  color: #757575;
+}
+
+.step-timestamp {
+  margin: 0;
+  font-size: 12px;
+  color: #9E9E9E;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .order-tracking {
+    padding: 16px 0;
+  }
+  
+  .tracking-step {
+    margin-bottom: 16px;
+  }
+  
+  .step-content {
+    padding-right: 8px;
+  }
+}
